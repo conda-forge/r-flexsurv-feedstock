@@ -1,4 +1,4 @@
-{% set version = "2.0" %}
+{% set version = "2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flexsurv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flexsurv/flexsurv_{{ version }}.tar.gz
-  sha256: 89ae866c1d6f49fd318ed6bf0752626587a82ed77a1b4160075f7f8a65d4506f
+  sha256: 97eed8cc2d58ab759ac244b5b60e7f178b36251cd2896067b0daee366d92914f
 
 build:
   merge_build_host: true  # [win]
