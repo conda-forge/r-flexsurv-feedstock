@@ -30,6 +30,7 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
@@ -38,6 +39,7 @@ requirements:
     - r-desolve
     - r-dplyr
     - r-generics
+    - r-ggplot2
     - r-magrittr
     - r-mstate >=0.2.10
     - r-muhaz
@@ -47,6 +49,7 @@ requirements:
     - r-quadprog
     - r-rlang
     - r-rstpm2
+    - r-statmod
     - r-survival
     - r-tibble
     - r-tidyr
@@ -60,6 +63,7 @@ requirements:
     - r-desolve
     - r-dplyr
     - r-generics
+    - r-ggplot2
     - r-magrittr
     - r-mstate >=0.2.10
     - r-muhaz
@@ -69,6 +73,7 @@ requirements:
     - r-quadprog
     - r-rlang
     - r-rstpm2
+    - r-statmod
     - r-survival
     - r-tibble
     - r-tidyr
