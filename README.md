@@ -3,6 +3,7 @@ About r-flexsurv-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-flexsurv-feedstock/blob/main/LICENSE.txt)
 
+
 About r-flexsurv
 ----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/chjackson/flexsurv-dev
 Package license: GPL-2.0-or-later
 
 Summary: Flexible parametric models for time-to-event data, including the Royston-Parmar spline model, generalized gamma and generalized F distributions.  Any user-defined parametric distribution can be fitted, given at least an R function defining the probability density or hazard. There are also tools for fitting and predicting from fully parametric multi-state models.
+
 About r-flexsurv
 ----------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
