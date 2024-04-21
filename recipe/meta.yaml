@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/flexsurv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/flexsurv/flexsurv_{{ version }}.tar.gz
-  sha256: 6635750e40c5ffd5648fa3539208ca0c761953a724ef110225fd625762d450e3
+  sha256: 471a36f193c88f008b31d2e62920804781394f2e3e5235b4becc09601d7c61f8
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("c") }}                # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
