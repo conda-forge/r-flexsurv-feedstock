@@ -1,6 +1,5 @@
 {% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-flexsurv
@@ -13,8 +12,7 @@ source:
   sha256: 471a36f193c88f008b31d2e62920804781394f2e3e5235b4becc09601d7c61f8
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,7 +56,6 @@ requirements:
     - r-tidyselect
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-rcpp >=0.11.5
     - r-assertthat
